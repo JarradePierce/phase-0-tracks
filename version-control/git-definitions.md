@@ -9,4 +9,4 @@
 * What is a commit? What makes a good commit message?
 3. A commit is a save point the file or files in your git repo.
 * What is a merge conflict?
-4. A merge conflict is a conflict between two branches merging or pushing into another branch that was not configured properly.
+4. A merge conflict is a conflict between two branches merging or pushing into another branch that was not configured properly
