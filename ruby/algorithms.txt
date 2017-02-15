@@ -1,0 +1,39 @@
+_______________________________________
+Task 1 Tell robot how to use a elevator
+
+1. 
+Enter elevator 
+2.
+choose floor number
+3.
+arrive at floor
+4. 
+leave elevator
+
+_______________________________________
+Task 2 Using Bart
+
+1.
+go to ticket machine
+2.
+buy a ticket
+3. 
+take ticket
+4.
+go to terminal put ticket in terminal
+5.
+take ticket out of terminal and go to the train
+6. 
+check times to make sure you are on the right train
+7.
+hop on the train
+8.
+wait until you arrive at your destination.
+9.
+leave train
+10.
+go to ticket terminal
+11. 
+repeat step 4 
+12.
+take ticket out of terminal and leave the station.
