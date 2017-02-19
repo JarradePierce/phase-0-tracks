@@ -45,3 +45,22 @@ until total_processed == processed do
 	end 
 	total_processed += 1
 end
+
+def hasAlergies
+	is_done = false
+	p "Name all of your allergies one at a time"
+
+	while is_done == false
+		alergies = gets.chomp
+
+		if alergies == "done"
+			is_done = true
+		elsif alergies == "sunshine"
+			p "Probably a vampire"
+			is_done = true
+		end
+	end
+
+end
+hasAlergies
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
