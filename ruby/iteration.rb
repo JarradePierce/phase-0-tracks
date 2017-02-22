@@ -59,7 +59,7 @@ if animals.length < 2
 	end
 	puts animals
 end
-=end
+
 
 puts ""
 puts "HASHES!"
@@ -69,7 +69,7 @@ oceans.delete_if{
 }
 puts oceans
 
-puts ""
+
 puts "keep_if"
 puts ""
 oceans.keep_if{
@@ -77,13 +77,19 @@ oceans.keep_if{
 }
 puts oceans
 
-
+#answer to question 3
 oceans.each do |fish, ocean|
 	if fish.length > 3
 		puts fish
 	end
-
 end
+=end
+
+while oceans.length > 2
+	oceans.replace({"Glow fish" => "Arctic", "Lion fish" => "Pacific"})
+end
+puts oceans
+
 
 
 
