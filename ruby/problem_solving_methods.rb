@@ -15,4 +15,4 @@ def fib(num)
   return arr[0..num]
 end
 
-puts fib(100)
+puts fib(10)
