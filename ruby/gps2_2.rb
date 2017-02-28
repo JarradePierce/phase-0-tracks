@@ -78,15 +78,24 @@ pretty_list(created_list)
 
 
 
+#Release 4 Reflect
+#1. What did you learn about pseudocode from working on this challenge?
+# Psudocode is helpful it makes it so much easier to start on a new problem by making it more like plain English
 
+#2. What are the tradeoffs of using arrays and hashes for this challenge?
+#  We used hashes because it was eaiser to create a grocery list with a list, items and quantity of items
 
+#3. What does a method return?
+# A method returns a value inside the method
 
+#4. What kind of things can you pass into methods as arguments?
+# You can pass data types like strings integers bools, arrays hashes
 
+#5. How can you pass information between methods?
+ # You can use the methods parameters to pass arguments into other methods. 
 
-
-
-
-
-
+ #6. What concepts were solidified in this challenge, and what concepts are still confusing?
+ # The concept of passing multiple arguments in a method is strting to solidify. Sometimes 
+ # it can still be confusing. I am not sure what to put in for the arguments sometimes. 
 
 
