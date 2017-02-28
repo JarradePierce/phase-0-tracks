@@ -15,16 +15,18 @@ def create_list(item)
 	end
 	grocery_list
 end
-p create_list("carrots apples cereal pizza")
+created_list = create_list("carrots apples cereal pizza")
 
 # Method to add an item to a list
 # input: list, item name, and optional quantity
-# steps:
-# output:
+# steps: create new item for the grocery list
+# output: Grocery list
 
-def add_items
-	
+def add_items(list, item_name, quantity=0)
+	list[item_name] = quantity
+	list
 end
+p add_items(created_list, "milk")
 
 # Method to remove an item from the list
 # input:
