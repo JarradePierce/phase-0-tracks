@@ -8,12 +8,12 @@
 
 
 def create_list(item)
-	grocery_list = {}
+	list = {}
 	new_items = item.split(' ')
 	new_items.each do |one_item|
-		grocery_list[one_item] = 0
+		list[one_item] = 0
 	end
-	grocery_list
+	list
 end
 created_list = create_list("carrots apples cereal pizza")
 
@@ -29,9 +29,18 @@ end
 p add_items(created_list, "milk")
 
 # Method to remove an item from the list
-# input:
-# steps:
-# output:
+# input: list and item_name
+# steps: find item and delete it
+# output: Grocery list 
+
+def remove_item(list, item_name)
+	if list.has_key?(item_name)
+		list.delete(item_name)
+	end
+	list
+end
+p remove_item(created_list, "milk")
+
 
 # Method to update the quantity of an item
 # input:
