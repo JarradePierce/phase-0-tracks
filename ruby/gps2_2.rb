@@ -15,7 +15,7 @@ def create_list(item)
 	end
 	list
 end
-created_list = create_list("carrots apples cereal pizza")
+#created_list = create_list("carrots apples cereal pizza")
 
 # Method to add an item to a list
 # input: list, item name, and optional quantity
@@ -26,7 +26,7 @@ def add_items(list, item_name, quantity=0)
 	list[item_name] = quantity
 	list
 end
-p add_items(created_list, "milk")
+#p add_items(created_list, "milk")
 
 # Method to remove an item from the list
 # input: list and item_name
@@ -39,7 +39,7 @@ def remove_item(list, item_name)
 	end
 	list
 end
-p remove_item(created_list, "milk")
+#p remove_item(created_list, "milk")
 
 
 # Method to update the quantity of an item
@@ -51,10 +51,42 @@ def updated_quantity(list, item_name, quantity)
 	list[item_name] = quantity
 	list
 end
-p updated_quantity(created_list, "apples", 3)
+#p updated_quantity(created_list, "apples", 3)
 
 
 # Method to print a list and make it look pretty
-# input:
-# steps:
-# output:
+# input: list 
+# steps: make it look pretty
+# output: list
+
+def pretty_list(list)
+	puts "Grocery List".center(30)
+	list.each do |item, quantity|
+		puts "#{item} ".ljust(20) + "#{quantity}".rjust(10)
+	end
+end
+#pretty_list(created_list)
+
+created_list = create_list("Lemonade Tomatoes Onions")
+add_items(created_list, "Ice Cream", 4)
+updated_quantity(created_list, "Lemonade", 2)
+updated_quantity(created_list, "Tomatoes", 3)
+updated_quantity(created_list, "Onions", 1)
+remove_item(created_list, "Lemonade")
+updated_quantity(created_list, "Ice Cream", 1)
+pretty_list(created_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
