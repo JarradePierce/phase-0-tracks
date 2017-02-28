@@ -43,9 +43,16 @@ p remove_item(created_list, "milk")
 
 
 # Method to update the quantity of an item
-# input:
-# steps:
-# output:
+# input: list item_name new_quantity
+# steps: find_item updated_quantity 
+# output: Grocery list
+
+def updated_quantity(list, item_name, quantity)
+	list[item_name] = quantity
+	list
+end
+p updated_quantity(created_list, "apples", 3)
+
 
 # Method to print a list and make it look pretty
 # input:
