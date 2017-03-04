@@ -5,8 +5,7 @@
   # set default quantity
   # print the list to the console [can you use one of your other methods here?]
 # output: [what data type goes here, hash?]
-
-
+=begin
 def create_list(item)
 	list = {}
 	new_items = item.split(' ')
@@ -65,6 +64,8 @@ def pretty_list(list)
 		puts "#{item} ".ljust(20) + "#{quantity}".rjust(10)
 	end
 end
+
+
 #pretty_list(created_list)
 
 created_list = create_list("Lemonade Tomatoes Onions")
@@ -75,6 +76,87 @@ updated_quantity(created_list, "Onions", 1)
 remove_item(created_list, "Lemonade")
 updated_quantity(created_list, "Ice Cream", 1)
 pretty_list(created_list)
+=end
+
+
+
+# practice creating another list
+=begin
+def create_list(item)
+	list = {}
+	new_item = item.split(' ')
+	new_item.each do |one_item|
+		list[one_item] = 0
+	end
+	list
+end
+
+
+
+def add_item(list, item, quantity=0)
+	list[item] = 0
+	list
+end
+
+def remove_item(list, item_name)
+	if list.has_key?(item_name)
+		list.delete(item_name)
+	end
+end
+
+def update_quantity(list, item, quantity)
+	list[item] = quantity
+	list
+end
+
+def pretty_list(list)
+	puts "Grocery List".center(30)
+	puts "_" * 20
+	list.each do |list, quantity|
+		puts "#{list}".ljust(20) + "#{quantity}".rjust(10)
+	end
+end
+
+def add_super_item(list, s_item, quantity)
+	list[s_item + " Super Item"] = quantity
+	list
+end
+
+created_list = create_list("Lemonade Milk")
+add_item(created_list, "Cheese")
+p created_list
+remove_item(created_list, "Cheese")
+p created_list
+update_quantity(created_list, "Lemonade", 5)
+p created_list
+
+add_super_item(created_list, "macbook air", 2)
+pretty_list(created_list)
+=end
+
+
+
+#Collecteble cards list
+
+def create_card_list(card)
+	list = {}
+	new_card = card.split(' ')
+	new_card.each do |one_card|
+		list[one_card] = 0
+	end
+	list
+end
+
+def add_card_power(list, card, power)
+	list[card] = power
+end
+
+card_collection = create_card_list("mayweather pierce corrales rod")
+p card_collection
+
+add_card_power(card_collection, "mayweather", 5)
+p card_collection
+
 
 
 
