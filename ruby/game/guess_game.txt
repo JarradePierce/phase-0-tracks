@@ -1,0 +1,7 @@
+Guessing game
+1. one user can enter a word and another user attempts to guess the word.
+2. Guesses are limited and the number of guesses avaliable is related to the length of the word
+3. Repeated guesses do not count against the user
+4. The guessing player recieves continual feedback on the current state of the word. So if the secret word is "Unicorn" the user will start out seeing something like "-------" wich would become "---c---" afer the user enters a guess of 'c'.
+5. The user should get a congratulartory message if they win, and a taunting message if they lose.(allow the creator of the word create a taunt)
+
