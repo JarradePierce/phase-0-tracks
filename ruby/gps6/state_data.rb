@@ -1,3 +1,4 @@
+=begin
 Skip to content
 This repository
 Search
@@ -18,6 +19,7 @@ RawBlameHistory
 57 lines (55 sloc)  3.46 KB
 #population density is number of people per square mile as of 2012
 #this data is updated every year with estimates from a 10 year census
+=end
 
 
 STATE_DATA = {
@@ -73,5 +75,7 @@ STATE_DATA = {
   "Wisconsin" => {population_density: 105.2, population: 5726398},
   "Wyoming" => {population_density: 5.851, population: 576412}
 }
+=begin
 Contact GitHub API Training Shop Blog About
 © 2017 GitHub, Inc. Terms Privacy Security Status Help
+=end

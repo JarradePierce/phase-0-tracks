@@ -1,3 +1,4 @@
+=begin
 Skip to content
 This repository
 Search
@@ -16,6 +17,7 @@ Branch: master Find file Copy pathphase-0-code/week-7/gps6/my_solution.rb
 1 contributor
 RawBlameHistory     
 87 lines (64 sloc)  2.47 KB
+=end
 # Virus Predictor
 
 # I worked on this challenge [by myself, with: ].
@@ -35,8 +37,8 @@ class VirusPredictor
   end
 
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+     predicted_deaths(@population_density, @population, @state)
+     speed_of_spread(@population_density, @state)
   end
 
   private
@@ -89,7 +91,6 @@ end
 
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-alabama.virus_effects
 
 jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
 jersey.virus_effects
@@ -103,5 +104,7 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+=begin
 Contact GitHub API Training Shop Blog About
 © 2017 GitHub, Inc. Terms Privacy Security Status Help
+=end
