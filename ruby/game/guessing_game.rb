@@ -3,22 +3,15 @@ class GuessGame
 	def initialize(word)
 		@word = word.split('')
 		@correct_guess_arr = []
-	end
-
-	def split_word(word)
-		word.split('')
+		@word_arr << word
 	end
 
 	def number_of_guesses(word)
 		guess_limit = word.length + 1
 	end
 
-	def check_guess(word, letter)
-		if word.include?(letter)
-			puts "#{letter} is in the word!"
-		else
-			puts "nope"
-		end
+	def start_game()
+		
 	end
 
 end
