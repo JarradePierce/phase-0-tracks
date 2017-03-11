@@ -12,20 +12,26 @@ function phrase(word_arr){
 	console.log(longest_word);
 }
 
-
+// Create 2 objects and compare them if there keys or values match
+//it should return true
+//else false
 function two_objects(obj_k, obj_v, obj2_k, obj2_v){
+	//2 empty objects im going to push the parameters to them
 	object1 = {};
 	object2 = {};
 
+	// pushing the parameters to the objects
 	object1[obj_k] = obj_v;
 	object2[obj2_k] = obj2_v;
 
+	// comparing the objects
 	if(obj_k == obj2_k || obj_v == obj2_v){
 		console.log(true);
+		return true;
 	}else{
 		console.log(false);
+		return false;
 	}
-
 }
 
 //create random words using the parameter as the amount of words in the array
