@@ -1,5 +1,6 @@
 
 #release 0
+=begin
 def search_array(arr, idx)
 	count = 0
 	until count == arr.length
@@ -11,6 +12,21 @@ def search_array(arr, idx)
 end
 arr = [23, 44, 25, 99]
 p search_array(arr, 1)
+=end
+
+
+
+def search_array(arr, idx)
+  count = arr.length
+  count.times do |index|
+    if index == idx
+      puts arr[index]
+    end
+  end
+end
+arr = [23, 44, 25, 99]
+p search_array(arr, 1)
+
 
 
 #release 1
@@ -29,7 +45,7 @@ def fib(num)
   return arr[0..num]
 end
 
-puts fib(10)
+#puts fib(10)
 
 
 
