@@ -42,7 +42,7 @@ class Game_Class
 
 		@word.each do |letter|
 			if @correct_guesses.include?(letter)
-				letter = letter
+				letter
 			else
 				letter = "_"
 			end
@@ -51,12 +51,15 @@ class Game_Class
 	end
 
 	def game_over
+		did_win = false
 		if @correct_guesses.length == @word.length
 			puts "\nYou win"
 			puts "The word was #{@word.join('')}"
+			did_win = true
 		else
 			puts "\nYou lose!"
 			puts "The word was #{@word.join('')}"
+			did_win = false
 		end
 	end
 
