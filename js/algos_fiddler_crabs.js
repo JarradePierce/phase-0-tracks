@@ -11,4 +11,21 @@ function phrase(word_arr){
 	}
 	console.log(longest_word);
 }
-phrase('short longest middle')
+
+function twoObjects(obj1_k, obj1_v, obj2_k, obj2_v){
+	object1 = {}
+	object2 = {}
+
+	// pushing params to objects
+	object1[obj1_k] = obj1_v;
+	object2[obj2_k] = obj2_v
+
+	if(obj1_k == obj2_k || obj1_v == obj2_v){
+		console.log(true);
+		return true;
+	}else{
+		console.log(false);
+		return false;
+	}
+}
+twoObjects('jay', 27, 'kaila', 27);
