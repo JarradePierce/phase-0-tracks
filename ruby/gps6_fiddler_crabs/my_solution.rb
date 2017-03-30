@@ -24,7 +24,7 @@ class VirusPredictor
   end
 
   private
-  
+
   #takes instance methods given by virus effect method.
   #breaks down numbers of deaths by population density.
   def predicted_deaths
