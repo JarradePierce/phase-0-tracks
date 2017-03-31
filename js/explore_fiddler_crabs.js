@@ -12,7 +12,6 @@
 //return the new string
 
 function reverse(word){
-	var count = 0
 	var word_arr = []
 
 	for(var i = word.length; i >= 0; i--){
