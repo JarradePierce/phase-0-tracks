@@ -1,15 +1,14 @@
 function phrase(word_arr){
 	var word_length = 0;
-	var words = word_arr.split(' ');
-	for(var i = 0; i < words.length; i++){
+	for(var i = 0; i < word_arr.length; i++){
 		//checks if words length is greater than word_length
-		if(words[i].length > word_length){
+		if(word_arr[i].length > word_length){
 		// word_length is equal to the length of that word.
-		var word_length = words[i].length;
-		longest_word = words[i];
+		var word_length = word_arr[i].length;
+		longest_word = word_arr[i];
 		}
 	}
-	console.log(longest_word);
+	console.log("Longest Word: " + longest_word);
 	return longest_word;
 }
 
@@ -74,6 +73,7 @@ var randomStrings = function(int){
 	for(var i = 0; i < random_words.length; i++){
 		//console.log(random_words[i]);
 	}
+	console.log(random_words);
 	return random_words
 }
 
@@ -81,6 +81,7 @@ var randomStrings = function(int){
 //arr.push(randomStrings(5));
 
 //phrase(arr);
+phrase(randomStrings(10));
 
 
 
