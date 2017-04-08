@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------
+Release 2.2 JOINING 3 TABLES
+sqlite> SELECT * FROM users JOIN reviews ON users.id  = reviews.user_id JOIN 
+businesses ON reviews.business_id = businesses.id;
+1|Bradford|Pitt|1|4|Great time at a wedding!|1|1|1|Grundy Hollow Wedding Chapel
+2|Mandy|Kaling|2|1|Jerks towed my car!|2|2|2|Amir's Towing
+3|Angela|Jolie|3|5|Danced all night with my dog!|3|3|3|The Beagle Nightclub
+----------------------------------------------------------------------------------
+Release 2.3 VIEW SELECTED DATA (user 1st and last name, biz name, stars and comment)
+SELECT users.name, businesses.name, reviews.stars, reviews.comment FROM reviews JOIN users ON reviews.user_id = users.id JOIN businesses ON reviews.business_id = businesses.id;
+Bradford|Pitt|Grundy Hollow Wedding Chapel|4|Great time at a wedding!
+Mandy|Kaling|Amir's Towing|1|Jerks towed my car!
+Angela|Jolie|The Beagle Nightclub|5|Danced all night with my dog!
+----------------------------------------------------------------------------------
+Release 2.4 VIEW DATA OF ALL 3 TABLES FOR ONE BUSINESS
+SELECT * FROM users JOIN reviews ON users.id  = reviews.user_id JOIN 
+businesses ON reviews.business_id = businesses.id WHERE businesses.name = "The Beagle Nightclub";
+3|Angela|Jolie|3|5|Danced all night with my dog!|3|3|3|The Beagle Nightclub
+----------------------------------------------------------------------------------
