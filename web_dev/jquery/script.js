@@ -14,5 +14,5 @@ $(document).ready(function(){
 
     $("#css-button").click(function(){
     	$("#sign-up-css").show();
-    });
+    }); 
 });
