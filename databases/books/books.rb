@@ -23,8 +23,8 @@ end
 
 def main_menu(db)
 	p '1. Enter a new book'
-	p '2 Search a book by name'
-	p '3 view all books'
+	p '2. Search a book by name'
+	p '3. view all books'
 
 	choose = gets.chomp.to_i
 	if choose == 1
@@ -48,7 +48,7 @@ end
 def user_view_all_books(db)
 	myBooks = db.execute('SELECT * FROM myBooks')
 	myBooks.each do |book|
-		puts "#{book['name']} | #{book['rating']} | #{book['book_id']}"
+		puts "#{book['id']} #{book['name']} | #{book['rating']} | #{book['book_id']}"
 	end
 end
 
@@ -60,6 +60,7 @@ def find_book_by_name(db, search)
 end
 
 def user_search_book_by_name(db)
+	p 'Search for a book!'
 	search = gets.chomp
 	find_book_by_name(db, search)
 end
