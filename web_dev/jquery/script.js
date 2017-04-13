@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     $("#html-button").click(function(){
     	$("#sign-up-html").show();
-    });
+    }); 
 
     $("#css-button").click(function(){
     	$("#sign-up-css").show();
