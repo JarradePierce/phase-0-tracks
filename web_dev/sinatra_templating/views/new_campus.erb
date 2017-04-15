@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enter A New Campus</title>
+</head>
+<body>
+	<form action="/campus" method="POST">
+		<input type='text' name="city" placeholder="city">
+		<input type='text' name="state" placeholder="state">
+		<button type='submit'>Save</button>
+	</form>
+	<ul>
+    <% @campus.each do |location| %>
+      <li><%= location['state'] %>, <%= location['city'] %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
